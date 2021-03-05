@@ -6,9 +6,10 @@ namespace Part_5___Decisions
     {
         static void Main(string[] args)
         {
-            int age, category;
+            int age, category, inputnum, randomnum;
 
             //Stages
+            Console.WriteLine("Stages:");
             Console.WriteLine("Please enter your age: ");
             Int32.TryParse(Console.ReadLine(),out age);
 
@@ -16,7 +17,7 @@ namespace Part_5___Decisions
             {
                 Console.WriteLine("Adult");
             }
-            else if (age < 0)
+            else if (age <= 0)
             {
                 Console.WriteLine("Error");
             }
@@ -36,9 +37,13 @@ namespace Part_5___Decisions
             {
                 Console.WriteLine("Teen");
             }
+           
+
+            Console.WriteLine("");
 
             //Hurricane
-            Console.WriteLine("Please enter your category");
+            Console.WriteLine("Hurricane:");
+            Console.WriteLine("Please enter your category:");
             Int32.TryParse(Console.ReadLine(), out category);
 
             if (category == 1)
@@ -66,8 +71,34 @@ namespace Part_5___Decisions
                 Console.WriteLine("ERROR");
             }
 
+            Console.WriteLine("");
+
             //Random Divisible
             Random generator = new Random();
+
+            randomnum = generator.Next(1, 7);
+            Console.WriteLine("Random Divisible:");
+            Console.WriteLine($"Please enter a number larger than {randomnum}: ");
+            Int32.TryParse(Console.ReadLine(), out inputnum);
+            if (inputnum < randomnum)
+            {
+                Console.WriteLine("ERROR");
+            }
+
+            else if  (inputnum % randomnum == 0)
+            {
+                Console.WriteLine("Divisible");
+            }
+
+            else if (inputnum % randomnum != 0)
+            {
+                Console.WriteLine("Not Divisible");
+            }
+
+            else
+            {
+                Console.WriteLine("ERROR");
+            }
 
         }
     }

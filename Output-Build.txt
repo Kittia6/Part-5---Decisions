@@ -1,0 +1,4 @@
+﻿Build started...
+1>------ Build started: Project: Part 5 - Decisions, Configuration: Debug Any CPU ------
+1>  Part 5 - Decisions -> C:\Users\kitti\Source\Repos\Part-5---Decisions\bin\Debug\Part 5 - Decisions.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
