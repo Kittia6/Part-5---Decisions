@@ -76,7 +76,7 @@ namespace Part_5___Decisions
             //Random Divisible
             Random generator = new Random();
 
-            randomnum = generator.Next(1, 7);
+            randomnum = generator.Next(2, 7);
             Console.WriteLine("Random Divisible:");
             Console.WriteLine($"Please enter a number larger than {randomnum}: ");
             Int32.TryParse(Console.ReadLine(), out inputnum);
